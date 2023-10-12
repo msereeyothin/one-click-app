@@ -10,7 +10,7 @@ interface LeftArrowProps {
 export const LeftArrow: FC<LeftArrowProps> = ({ href }) => {
   return (
     <>
-      <div className="fixed left-0 align-middle">
+      <div className="fixed left-0 align-middle transition hover:bg-slate-700">
         <Link href={href}>
           <ArrowSvg></ArrowSvg>
         </Link>

@@ -9,7 +9,7 @@ interface RightArrowProps {
 export const RightArrow: FC<RightArrowProps> = ({ href }) => {
   return (
     <>
-      <div className="rotate-180 fixed right-0 align-middle">
+      <div className="rotate-180 fixed right-0 align-middle transition hover:bg-slate-700">
         <Link href={href}>
           <ArrowSvg></ArrowSvg>
         </Link>

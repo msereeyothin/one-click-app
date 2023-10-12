@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import { Button } from "@material-tailwind/react";
 
 export const NavBar = () => {
   return (
@@ -8,23 +7,23 @@ export const NavBar = () => {
       <div className="w-full lg:inline-flex lg:flex-grow lg:w-auto justify-center">
         <div className="lg:inline-flex lg:flex-row lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto">
           <Link href="..">
-            <p className="px-10 rounded text-white font-bold items-center justify-center hover:underline ">
+            <p className="text-xl px-10 rounded text-white font-bold items-center justify-center transition hover:underline ">
               Home
             </p>
           </Link>
           <Link href="../process">
-            <p className="lg:inline-flex lg:w-auto w-full px-10 py-2 rounded text-white font-bold items-center justify-center hover:underline">
+            <p className="text-xl lg:inline-flex lg:w-auto w-full px-10 py-2 rounded text-white font-bold items-center justify-center transition hover:underline">
               Process
             </p>
           </Link>
           <p className="px-10 py-2 text-white text-2xl font-bold">ONECLICK</p>
           <Link href="../software">
-            <p className="lg:inline-flex lg:w-auto w-full px-10 py-2 rounded text-white font-bold items-center justify-center hover:underline">
+            <p className="text-xl lg:inline-flex lg:w-auto w-full px-10 py-2 rounded text-white font-bold items-center justify-center transition hover:underline">
               Software
             </p>
           </Link>
           <Link href="../buy">
-            <p className="lg:inline-flex lg:w-auto w-full px-10 py-2 rounded text-white font-bold items-center justify-center hover:underline">
+            <p className="text-xl lg:inline-flex lg:w-auto w-full px-10 py-2 rounded text-white font-bold items-center justify-center transition hover:underline">
               Buy
             </p>
           </Link>

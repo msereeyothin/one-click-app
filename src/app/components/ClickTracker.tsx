@@ -9,7 +9,7 @@ import {
 } from "@material-tailwind/react";
 
 const ClickTracker = () => {
-  const [clickCount, setClickCount] = useState(1000);
+  const [clickCount, setClickCount] = useState(2000);
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(!open);
 
@@ -32,13 +32,13 @@ const ClickTracker = () => {
   }, []);
 
   return (
-    <div className="text-center text-blue-500">
-      <h1>You have {clickCount} remaining clicks</h1>
+    <div className="fixed bottom-10 right-10 bg-black border-2 border-white rounded-lg p-3 shadow-lg">
+      <div>You have {clickCount} remaining clicks</div>
       <>
         <Dialog open={open} handler={handleOpen} size="xxl">
           <DialogHeader>You ran out of clicks!</DialogHeader>
           <DialogBody divider>
-            You only get 10 clicks! Better use them more wisely.
+            You only get 20 clicks! Better use them more wisely.
           </DialogBody>
         </Dialog>
       </>
