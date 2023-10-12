@@ -5,7 +5,9 @@ function BuyPage() {
   return (
     <>
       <LeftArrow href="../software"></LeftArrow>
-      <p> Buy landing BuyPage </p>
+      <div className="flex flex-col items-center justify-center min-h-screen">
+        <p>This product is not for sale</p>
+      </div>
     </>
   );
 }

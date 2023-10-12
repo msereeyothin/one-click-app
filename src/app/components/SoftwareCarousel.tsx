@@ -2,14 +2,14 @@
 import { Carousel, IconButton } from "@material-tailwind/react";
 import Image from "next/image";
 
-export function SketchCarousel() {
+export function SoftwareCarousel() {
   return (
     <Carousel
       className="rounded-xl"
       prevArrow={({ handlePrev }) => (
         <IconButton
           variant="text"
-          color="black"
+          color="white"
           size="lg"
           onClick={handlePrev}
           className="!absolute top-2/4 left-4 -translate-y-2/4"
@@ -33,7 +33,7 @@ export function SketchCarousel() {
       nextArrow={({ handleNext }) => (
         <IconButton
           variant="text"
-          color="black"
+          color="white"
           size="lg"
           onClick={handleNext}
           className="!absolute top-2/4 !right-4 -translate-y-2/4"
@@ -55,20 +55,9 @@ export function SketchCarousel() {
         </IconButton>
       )}
     >
-      <Image src="/s1.jpg" alt="sketch" width={850} height={850}></Image>
-      <Image src="/s2.jpg" alt="sketch" width={850} height={850}></Image>
-      <Image src="/s3.jpg" alt="sketch" width={850} height={850}></Image>
-      <Image src="/s4.jpg" alt="sketch" width={850} height={850}></Image>
-      <Image src="/s5.jpg" alt="sketch" width={850} height={850}></Image>
-      <Image src="/s6.jpg" alt="sketch" width={850} height={850}></Image>
-      <Image src="/s7.jpg" alt="sketch" width={850} height={850}></Image>
-      <Image src="/s8.jpg" alt="sketch" width={850} height={850}></Image>
-      <Image src="/s9.jpg" alt="sketch" width={850} height={850}></Image>
-      <Image src="/s10.jpg" alt="sketch" width={850} height={850}></Image>
-      <Image src="/s11.jpg" alt="sketch" width={850} height={850}></Image>
-      <Image src="/s12.jpg" alt="sketch" width={850} height={850}></Image>
-      <Image src="/s13.jpg" alt="sketch" width={850} height={850}></Image>
-      <Image src="/s14.jpg" alt="sketch" width={850} height={850}></Image>
+      <Image src="/intro.png" alt="intro" width={850} height={850}></Image>
+      <Image src="/form.png" alt="form" width={850} height={850}></Image>
+      <Image src="/home.png" alt="home" width={850} height={850}></Image>
       
       
     </Carousel>
